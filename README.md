@@ -9,9 +9,9 @@ Uma landing page de alta conversão para um retiro de yoga, construída com Reac
 O objetivo desta landing é maximizar conversões (inscrições/contatos) com narrativa em funil: hero claro, benefícios, prova social, detalhes do retiro, FAQs e CTA persistente. O app é mobile‑first, com breakpoints progressivos, cores e tipografia guiadas por tokens do Figma e componentes reutilizáveis seguindo o Design Atômico.
 
 ## 📸 Preview
-Deploy: https://seu-deploy-aqui.com
-Figma: https://figma.com/file/SEU-FIGMA
-Screenshot: docs/preview.png
+- Deploy: https://seu-deploy-aqui.com
+- Figma: https://figma.com/file/SEU-FIGMA
+- Screenshot: docs/preview.png
 
 ## 🔧 Stack
 ⚛️ React (CRA/Vite/Next — adapte conforme seu setup)
