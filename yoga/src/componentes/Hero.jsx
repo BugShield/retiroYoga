@@ -1,6 +1,6 @@
-import bgHeart from "../../public/assets/bgHearts.png";
-import logo7 from "../../public/assets/logo7.png"
-import rodrigoPalestra from "../../public/assets/imersao/rodrigoPalestra.JPG"
+import bgHeart from "/assets/bgHearts.png";
+import logo7 from "/assets/logo7.png"
+import rodrigoPalestra from "/assets/imersao/rodrigoPalestra.JPG"
 
 const facilitadores = [
   { nome: "Dani Bertolo", foto: rodrigoPalestra, cargo: "Professora de Hatha Yoga" },
@@ -11,8 +11,7 @@ export default function Hero() {
   return (
     <div className="h-dvh">
       <div
-        className="w-full h-dvh flex flex-col items-center justify-center bg-cover"
-        style={{ backgroundImage: `url(${bgHeart})` }}
+        className="w-full flex flex-col items-center justify-center"
       >
         <p className="text-center mb-8">7, 8 E 9 DE NOVEMBRO</p>
         <h1 className="text-center text-4xl w-1/2 mb-1">

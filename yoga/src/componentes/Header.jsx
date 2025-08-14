@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import SideNav from "./SideBar";
+import logo7 from "/assets/logo7.png"
 
 const pages = [
   {nome:'Sobre',link:'#sobre'},
@@ -19,14 +20,14 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className="bg-transparent">
-      <header className="flex justify-between items-center mx-8 mt-6 mb-4 font-bold">
-        <span>Logo</span>
+    <div className="">
+      <header className="flex justify-between items-center mx-8 mb-4 font-bold">
+        <img className="w-15 mt-5" src={logo7} alt="Logo 7étimo céu" />
         <button
           type="button"
           aria-label="Abrir menu"
           onClick={toggleMenu}
-          className="p-2 rounded hover:bg-amber-50/20 transition"
+          className="p-2 mt-5 rounded hover:bg-amber-50/20 transition"
         >
           <Menu />
         </button>
