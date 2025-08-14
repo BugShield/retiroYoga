@@ -14,10 +14,11 @@ export default function Hero() {
         className="w-full h-dvh flex flex-col items-center justify-center bg-cover"
         style={{ backgroundImage: `url(${bgHeart})` }}
       >
+        <p className="text-center mb-8">7, 8 E 9 DE NOVEMBRO</p>
         <h1 className="text-center text-4xl w-1/2 mb-1">
           Retiro <br /> Yoga e Magia <br /> Natural
         </h1>
-        <h4>Versão 3.0</h4>
+        <h4 className="text-lg">Versão 3.0</h4>
         <p className="text-2xl font-semibold w-2/3 text-center my-6">A reconexão com o amor verdadeiro</p>
         <div className="w-9/10 mx-2 flex justify-around">
           {facilitadores.map((facilitador) => (
@@ -33,8 +34,8 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="">
-          <img className="w-25 object-cover mt-40" src={logo7} alt='Logo 7etimoceu' />
+        <div className="mt-20">
+          <img className="w-25 object-cover" src={logo7} alt='Logo 7etimoceu' />
         </div>
       </div>
     </div>
