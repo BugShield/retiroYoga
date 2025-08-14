@@ -20,7 +20,7 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className="">
+    <div className="fixed top-0 left-0 right-0 z-50  ">
       <header className="flex justify-between items-center mx-8 mb-4 font-bold">
         <img className="w-15 mt-5" src={logo7} alt="Logo 7étimo céu" />
         <button

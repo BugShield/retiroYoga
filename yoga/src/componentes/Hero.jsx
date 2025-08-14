@@ -19,7 +19,7 @@ export default function Hero() {
         </h1>
         <h4 className="text-lg">Versão 3.0</h4>
         <p className="text-2xl font-semibold w-2/3 text-center my-6">A reconexão com o amor verdadeiro</p>
-        <div className="w-9/10 mx-2 flex justify-around">
+        <div className="w-9/10  flex justify-around">
           {facilitadores.map((facilitador) => (
             <div className="flex flex-col items-center justify-center">
               <img
