@@ -4,10 +4,11 @@ import SideNav from "./SideBar";
 
 const pages = [
   {nome:'Sobre',link:'#sobre'},
-  {nome:'Imersão',link:'#imersao'},
-  {nome:'Facilitadores',link:'#facilitadores'},
+  {nome:'Retiro',link:'#retiro'},
   {nome:'Local',link:'#local'},
   {nome:'Alimentação',link:'#alimentacao'},
+  {nome:'Facilitadores',link:'#facilitadores'},
+  {nome:'Imersão',link:'#imersao'},
   {nome:'Investimento',link:'#investimento'},
   {nome:'Contato',link:'#contato'},
 ]
@@ -18,7 +19,7 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <>
+    <div className="bg-transparent">
       <header className="flex justify-between items-center mx-8 mt-6 mb-4 font-bold">
         <span>Logo</span>
         <button
@@ -35,6 +36,6 @@ export default function Header() {
         {pages.map(page => <a className="text-white hover:text-amber-200 transition-colors" href={page.link}>{page.nome}</a>)}
         
       </SideNav>
-    </>
+    </div>
   );
 }
