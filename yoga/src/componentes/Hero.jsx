@@ -1,4 +1,3 @@
-import bgHeart from "/assets/bgHearts.png";
 import logo7 from "/assets/logo7.png"
 import rodrigoPalestra from "/assets/imersao/rodrigoPalestra.JPG"
 
@@ -9,11 +8,11 @@ const facilitadores = [
 
 export default function Hero() {
   return (
-    <div className="h-dvh">
+    <div className="h-dvh" id="hero">
       <div
         className="w-full flex flex-col items-center justify-center"
       >
-        <p className="text-center mb-8">7, 8 E 9 DE NOVEMBRO</p>
+        <p className="text-center mt-20 mb-10">7, 8 E 9 DE NOVEMBRO</p>
         <h1 className="text-center text-4xl w-1/2 mb-1">
           Retiro <br /> Yoga e Magia <br /> Natural
         </h1>

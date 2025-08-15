@@ -4,8 +4,8 @@ import SideNav from "./SideBar";
 import logo7 from "/assets/logo7.png"
 
 const pages = [
-  {nome:'Sobre',link:'#sobre'},
-  {nome:'Retiro',link:'#retiro'},
+  {nome:'Sobre',link:'#hero'},
+  {nome:'Retiro',link:'#sobre'},
   {nome:'Local',link:'#local'},
   {nome:'Alimentação',link:'#alimentacao'},
   {nome:'Facilitadores',link:'#facilitadores'},
@@ -29,7 +29,7 @@ export default function Header() {
           onClick={toggleMenu}
           className="p-2 mt-5 rounded hover:bg-amber-50/20 transition"
         >
-          <Menu />
+          <Menu  />
         </button>
       </header>
 

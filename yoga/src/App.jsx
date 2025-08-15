@@ -22,9 +22,15 @@ function App() {
       >
         <Sobre />
       </div>
-      <Imersao />
+      <div
+        className="relative bg-no-repeat bg-center bg-cover pt-4"
+        style={{ backgroundImage: `url(${bgHeart})` }}
+      >
+        <Local />
+      </div>
+
       <Facilitadores />
-      <Local />
+      <Imersao />
     </>
   );
 }
