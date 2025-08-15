@@ -1,4 +1,4 @@
-import { CarouselDefault } from "./moleculas/CarroselFotos";
+import  CarroselFotos  from "./moleculas/CarroselFotos";
 
 const local = {
   descricao: [
@@ -24,7 +24,7 @@ export default function Local() {
               <p>{paragrafo}</p>
             ))}
         </div>
-        <CarouselDefault/>
+        <CarroselFotos/>
       </div>
     </div>
   );

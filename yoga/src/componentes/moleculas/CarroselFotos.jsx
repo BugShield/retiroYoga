@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export function CarouselDefault() {
+export default function CarroselFotos() {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const images = [
@@ -117,4 +117,3 @@ export function CarouselDefault() {
   );
 }
 
-export default CarouselDefault;
