@@ -9,12 +9,12 @@ const textos = {
 export default function Sobre() {
   return (
     <div id="sobre" className="h-dvh flex flex-col justify-center items-center">
-      <div className="my-4 flex flex-col items-start gap-4 text-center">
-        <h2 className="font-bold text-[22px] w-1/2 mx-auto">{textos.cta}</h2>
+      <div className="mt-20 flex flex-col items-start gap-4 text-center">
+        <h2 className="font-bold text-[22px] w-2/3 mx-auto font-[tan]">{textos.cta}</h2>
         <div className="flex flex-col gap-4 text-[16px] w-9/10 mx-auto">
           <p>{textos.texto}</p>
         </div>
-        <div className="mt-40 mx-auto">
+        <div className="mt-60 mx-auto">
           <img className="w-25 object-cover" src={logo7} alt="Logo 7etimoceu" />
         </div>
       </div>
