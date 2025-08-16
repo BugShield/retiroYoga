@@ -22,4 +22,6 @@ export const local = {
       alt: "Pôr do Sol",
     },
   ],
+  end: "Estrada do Rio Manso, 455  Monteiro Lobato - São Paulo",
+  cep: "12250-000",
 };
