@@ -1,8 +1,8 @@
-import React from "react";
+import { useState } from "react";
 
 export default function ModalLead({ onClose }) {
-  const [nome, setNome] = React.useState("");
-  const [email, setEmail] = React.useState("");
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
 
   // Coloque aqui o número destino no formato internacional (sem +, espaços ou traços)
   // Exemplo: Brasil (55) + DDD (11) + número (912345678) => "5511912345678"
@@ -23,7 +23,7 @@ export default function ModalLead({ onClose }) {
     const lead = {
       nome: nome.trim(),
       email: email.trim(),
-      origem: "Site - Retiro 7º Céu", // opcional
+      origem: "Site - Retiro 7º Céu", 
       data: new Date().toISOString(),
     };
 
