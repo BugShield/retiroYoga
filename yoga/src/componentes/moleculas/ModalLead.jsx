@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ModalLead() {
+export default function ModalLead({ onClose }) {
   const [nome, setNome] = React.useState("");
   const [email, setEmail] = React.useState("");
 
@@ -45,8 +45,14 @@ export default function ModalLead() {
   }
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <div className="bg-white text-black p-6 rounded-lg shadow-lg w-11/12 sm:w-2/3 md:w-1/2 lg:w-2/5">
+    <div
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white text-black p-6 rounded-lg shadow-lg w-11/12 sm:w-2/3 md:w-1/2 lg:w-2/5"
+        onClick={(e) => e.stopPropagation()}
+      >
         <h2 className="text-xl font-bold mb-4 text-center">Pagamento</h2>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
