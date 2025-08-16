@@ -45,9 +45,6 @@ function App() {
         <Imersao />
         <Investimento />
       </div>
-
-     
-      
     </>
   );
 }
