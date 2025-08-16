@@ -1,23 +1,35 @@
-import logo7 from "/assets/logo7.png"
-import rodrigoPalestra from "/assets/imersao/rodrigoPalestra.JPG"
+import logo7 from "/assets/logo7.png";
+import rodrigoPalestra from "/assets/imersao/rodrigoPalestra.JPG";
 
 const facilitadores = [
-  { nome: "Dani Bertolo", foto: rodrigoPalestra, cargo: "Professora de Hatha Yoga" },
-  { nome: "Rodrigo Volponi", foto: rodrigoPalestra, cargo: "Terapeuta de Alma" },
+  {
+    nome: "Dani Bertolo",
+    foto: rodrigoPalestra,
+    cargo: "Professora de Hatha Yoga",
+  },
+  {
+    nome: "Rodrigo Volponi",
+    foto: rodrigoPalestra,
+    cargo: "Terapeuta de Alma",
+  },
 ];
 
 export default function Hero() {
   return (
     <div className="h-dvh" id="hero">
-      <div
-        className="w-full flex flex-col items-center justify-center"
-      >
-        <p className="text-center mt-20 mb-10">7, 8 E 9 DE NOVEMBRO</p>
+      <div className="w-full flex flex-col items-center justify-center">
+        <div className="mt-20 mb-10">
+          <div className="bg-white w-full mx-auto h-0.5"></div>
+          <p className="text-center">7, 8 E 9 DE NOVEMBRO</p>
+          <div className="bg-white w-full mx-auto h-0.5"></div>
+        </div>
         <h1 className="text-center text-4xl w-1/2 mb-1">
           Retiro <br /> Yoga e Magia <br /> Natural
         </h1>
         <h4 className="text-lg">Versão 3.0</h4>
-        <p className="text-2xl font-semibold w-2/3 text-center my-6">A reconexão com o amor verdadeiro</p>
+        <p className="text-2xl font-semibold w-2/3 text-center my-6">
+          A reconexão com o amor verdadeiro
+        </p>
         <div className="w-9/10  flex justify-around">
           {facilitadores.map((facilitador) => (
             <div className="flex flex-col items-center justify-center">
@@ -33,7 +45,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-20">
-          <img className="w-25 object-cover" src={logo7} alt='Logo 7etimoceu' />
+          <img className="w-25 object-cover" src={logo7} alt="Logo 7etimoceu" />
         </div>
       </div>
     </div>
