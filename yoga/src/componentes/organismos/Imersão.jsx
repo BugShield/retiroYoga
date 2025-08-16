@@ -19,8 +19,8 @@ export default function Imersao() {
         </div>
       </div>
       <div className="flex-col w-2/3 mx-auto">
-        <h3 className="text-xl font-bold mb-10 underline">{imersao.cta}</h3>
-        <ul className="my-4 mx-auto font-semibold text-start pb-10">
+        <h3 className="text-xl font-bold mb-8 underline">{imersao.cta}</h3>
+        <ul className="mx-auto font-semibold text-start">
           {imersao.atividades.map((atividade) => (
             <li className="my-2 list-disc">{atividade}</li>
           ))}

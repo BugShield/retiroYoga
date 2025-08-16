@@ -5,6 +5,7 @@ import Imersao from "./componentes/organismos/Imersão";
 import Facilitadores from "./componentes/organismos/Facilitadores";
 import Local from "./componentes/organismos/Local";
 import Alimentacao from "./componentes/organismos/Alimentacao";
+import Investimento from "./componentes/organismos/Investimento";
 import bgHeart from "/assets/bgHearts.png";
 
 function App() {
@@ -42,7 +43,11 @@ function App() {
         style={{ backgroundImage: `url(${bgHeart})` }}
       >
         <Imersao />
+        <Investimento />
       </div>
+
+     
+      
     </>
   );
 }
