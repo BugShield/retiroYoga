@@ -11,7 +11,6 @@ const pages = [
   { nome: "Facilitadores", link: "#facilitadores" },
   { nome: "Imersão", link: "#imersao" },
   { nome: "Investimento", link: "#investimento" },
-  { nome: "Informações", link: "#informacoes" },
   { nome: "Como Chegar", link: "#chegar" },
   { nome: "Contato", link: "#contato" },
 ];
