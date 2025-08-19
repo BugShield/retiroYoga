@@ -1,15 +1,22 @@
 import CardsPreco from "../moleculas/CardsPreco";
 import { cards } from "../../conteudo/cardsPreco";
 
+const textosInvestimento = {
+  titulo: 'Opções de Hospedagem',
+  paragrafo: 'Escolha a melhor opção para sua estadia. Valores por pessoa.',
+  cta: 'Desconto de 8% para pagamento à vista via PIX.'
+}
+
 export default function Investimento() {
   return (
-    <div className="pt-8">
+    <div id="investimento" className="h-vh pt-8">
       <div className="max-w-5xl mx-auto px-4 xl:text-center">
         <header className="mt-8 mb-8">
-          <h1 className="text-2xl font-bold text-white ml-2 xl:text-2xl ">Opções de Hospedagem</h1>
+          <h1 className="text-2xl font-bold text-white ml-2 xl:text-2xl ">{textosInvestimento.titulo}</h1>
           <p className="mt-1 ml-2 text-white">
-            Escolha a melhor opção para sua estadia. Valores por pessoa.
+            {textosInvestimento.paragrafo}
           </p>
+          <p className="mt-1 ml-2 text-white italic font-semibold underline">{textosInvestimento.cta}</p>
         </header>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:pb-20">

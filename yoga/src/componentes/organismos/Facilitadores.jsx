@@ -11,9 +11,9 @@ export default function Facilitadores() {
         <h2 className="font-bold text-[22px] my-8 font-[tan] text-center xl:mt-20 xl:text-[26px]">
           Facilitadores
         </h2>
-        <div className="xl:flex xl:items-center 2xl:pt-8">
+        <div className="xl:flex xl:items-center xl: 2xl:pt-8">
           {facilitadores.map((facilitador) => (
-            <div className="h-dvh mt-4 flex flex-col items-center xl:h-auto 2xl:max-w-6xl xl:mx-auto">
+            <div className="h-dvh mt-4 flex flex-col items-center xl:w-1/2 xl:h-auto 2xl:max-w-6xl xl:mx-auto">
               <img
                 className="w-[150px] h-[150px] rounded-full object-cover xl:w-[250px] xl:h-[250px]"
                 src={facilitador.foto}
