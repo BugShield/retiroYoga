@@ -37,7 +37,7 @@ export default function Header() {
       <SideNav isOpen={isOpen} onClose={closeMenu}>
         {pages.map((page) => (
           <a
-            className="font-semibold text-lg text-gray-700 hover:text-amber-200 transition-colors"
+            className="font-semibold text-lg text-white transition-colors"
             href={page.link}
           >
             {page.nome}

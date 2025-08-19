@@ -13,13 +13,14 @@ export default function Imersao() {
             {imersao.descricao.map((paragrafo) => (
               <p>{paragrafo}</p>
             ))}
-
-            <CarroselFotos images={imersao.imagens} />
           </div>
         </div>
+        <CarroselFotos images={imersao.imagens} />
       </div>
       <div className="flex-col w-2/3 mx-auto">
-        <h3 className="text-[19px] font-bold mb-8 underline font-[tan]">{imersao.cta}</h3>
+        <h3 className="text-[19px] font-bold mb-8 underline font-[tan]">
+          {imersao.cta}
+        </h3>
         <ul className="mx-auto font-semibold text-start">
           {imersao.atividades.map((atividade) => (
             <li className="my-2 list-disc">{atividade}</li>
