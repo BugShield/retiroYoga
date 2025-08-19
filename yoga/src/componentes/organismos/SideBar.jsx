@@ -16,7 +16,7 @@ export default function SideNav({ isOpen, onClose, children }) {
         aria-label="Menu lateral"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex flex-col gap-4 px-6 py-6 xl:items-center">
+        <div className="flex flex-col gap-4 px-6 py-6 items-center">
           {children}
         </div>
       </nav>
