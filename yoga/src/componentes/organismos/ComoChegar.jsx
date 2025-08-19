@@ -21,11 +21,7 @@ export default function ComoChegar() {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center">
             <p className="font-bold underline">Endereço</p>
-            <p className="w-3/5 text-center">{local.end}</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <p className="font-bold underline">CEP</p>
-            <p>{local.cep}</p>
+            <p className=" mt-2 w-4/5 text-center">{local.end}</p>
           </div>
         </div>
         <div className="my-10 w-9/10 mx-auto">

@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="bg-[#f4efef] text-gray-700 py-6 flex flex-col items-center gap-4">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <p className="mb-4">
-          Contato:{" "}
           <a href="mailto:rodrigo@7etimoceu.com.br" className="underline">
             rodrigo@7etimoceu.com.br
           </a>
