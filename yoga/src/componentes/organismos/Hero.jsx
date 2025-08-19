@@ -17,7 +17,7 @@ const facilitadores = [
 export default function Hero() {
   return (
     <div className="h-dvh px-4 lg:px-20 xl:px-40" id="hero">
-      <div className="w-full flex flex-col items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center mt-10">
         <div className="mt-10 my-4 lg:mt-20 lg:mb-10">
           <div className="bg-white w-full mx-auto h-0.5 mt-12"></div>
           <p className="text-center text-sm sm:text-base lg:text-lg">

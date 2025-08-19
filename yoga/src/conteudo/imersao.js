@@ -1,8 +1,7 @@
 export const imersao = {
   titulo: "Imersão",
   descricao: [
-    " Neste retiro, convidamos você a mergulhar em uma jornada de reconexão profunda consigo mesmo(a) e com as energias sutis que nos cercam.",
-    " Neste retiro, convidamos você a mergulhar em uma jornada de reconexão profunda consigo mesmo(a) e com as energias sutis que nos cercam.",
+    " Neste retiro, convidamos você a mergulhar em uma jornada de reconexão profunda consigo mesmo(a) e com as energias sutis que nos cercam."
   ],
   atividades: [
     "Limpeza Energética com Ervas",
@@ -50,10 +49,6 @@ export const imersao = {
     {
       src: "/assets/imersao/plato.jpeg",
       alt: "Prato de alimentos",
-    },
-    {
-      src: "/assets/imersao/rodrigoPalestra.JPG",
-      alt: "Rodrigo em palestra",
     },
     {
       src: "/assets/imersao/sala de pratica 3.jpeg",

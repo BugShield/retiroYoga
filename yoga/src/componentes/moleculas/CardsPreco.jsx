@@ -16,7 +16,7 @@ export default function CardsPreco({ title, subtitle, priceLine, installmentLine
   return (
     <>
       <div
-        className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col h-auto cursor-pointer"
+        className="bg-white rounded-2xl shadow-md overflow-hidden border flex flex-col h-auto cursor-pointer"
         onClick={handleClick}
       >
         <img src={imgSrc} alt={imgAlt} className="w-full h-35 object-cover" />

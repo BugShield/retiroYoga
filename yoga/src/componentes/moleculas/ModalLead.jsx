@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { X } from "lucide-react";
 
 export default function ModalLead({ onClose }) {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
+  const [telefone, setTelefone] = useState("");
 
   // Coloque aqui o número destino no formato internacional (sem +, espaços ou traços)
   // Exemplo: Brasil (55) + DDD (11) + número (912345678) => "5511912345678"
@@ -23,7 +25,8 @@ export default function ModalLead({ onClose }) {
     const lead = {
       nome: nome.trim(),
       email: email.trim(),
-      origem: "Site - Retiro 7º Céu", 
+      telefone: telefone.trim(),
+      origem: "Site - Retiro 7º Céu",
       data: new Date().toISOString(),
     };
 
@@ -35,6 +38,9 @@ export default function ModalLead({ onClose }) {
       "Meus dados:",
       `• Nome: ${lead.nome}`,
       `• E-mail: ${lead.email}`,
+      `• Telefone: ${lead.telefone}`,
+      `• Origem: ${lead.origem}`,
+
     ].join("\n");
 
     // Monta a URL do WhatsApp
@@ -53,11 +59,15 @@ export default function ModalLead({ onClose }) {
         className="bg-white text-black p-6 rounded-lg shadow-lg w-11/12 sm:w-2/3 md:w-1/2 lg:w-2/5"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-xl font-bold mb-4 text-center">Pagamento</h2>
-
+        <div className="flex justify-between">
+          <h2 className="text-xl font-bold mb-4 text-center">Pagamento</h2>
+          <X onClick={onClose} className="text-red-600" />
+        </div>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col">
-            <label htmlFor="nome" className="mb-1 text-sm font-medium">Nome Completo</label>
+            <label htmlFor="nome" className="mb-1 text-sm font-medium">
+              Nome Completo
+            </label>
             <input
               type="text"
               id="nome"
@@ -69,7 +79,9 @@ export default function ModalLead({ onClose }) {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="email" className="mb-1 text-sm font-medium">E-mail</label>
+            <label htmlFor="email" className="mb-1 text-sm font-medium">
+              E-mail
+            </label>
             <input
               type="email"
               id="email"
@@ -77,6 +89,20 @@ export default function ModalLead({ onClose }) {
               onChange={(e) => setEmail(e.target.value)}
               className="border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
               placeholder="seu@email.com"
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <label htmlFor="email" className="mb-1 text-sm font-medium">
+              Telefone
+            </label>
+            <input
+              type="phone"
+              id="telefone"
+              value={telefone}
+              onChange={(e) => setTelefone(e.target.value)}
+              className="border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              placeholder="1199999999"
             />
           </div>
 

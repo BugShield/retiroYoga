@@ -32,7 +32,7 @@ export default function CarroselFotos( {images = []}) {
   return (
     <div className="relative w-9/10 h-auto max-w-4xl mx-auto mt-8">
       {/* Main carousel container */}
-      <div className="relative h-96 overflow-hidden rounded-xl bg-gray-200">
+      <div className="relative h-96 overflow-hidden bg-gray-200">
         {/* Images */}
         <div 
           className="flex transition-transform duration-500 ease-in-out h-full"

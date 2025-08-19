@@ -3,7 +3,7 @@ import logo7 from "/assets/logo7.png"
 const textos = {
   cta: "RECONECTE-SE COM A SUA ESSÊNCIA",
   texto:
-    "Uma jornada de 3 dias para você se limpar, equilibrar e reconectar com a energia do amor verdadeiro, por meio de práticomo do Hatha Yoga e da magia com s forças da natureza",
+    "Uma jornada de 3 dias para você se limpar, equilibrar e reconectar com a energia do amor verdadeiro, por meio de práticas do Hatha Yoga e da Magia com as forças da natureza.",
 };
 
 export default function Sobre() {
