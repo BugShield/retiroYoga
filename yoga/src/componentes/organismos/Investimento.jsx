@@ -3,7 +3,7 @@ import { cards } from "../../conteudo/cardsPreco";
 
 export default function Investimento() {
   return (
-    <div className="h-dvh pt-10">
+    <div className="pt-8">
       <div className="max-w-5xl mx-auto px-4">
         <header className="mt-8 mb-8">
           <h1 className="text-2xl font-bold ml-2 ">Opções de Hospedagem</h1>
