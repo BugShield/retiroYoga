@@ -4,7 +4,7 @@ import CarroselFotos from "../moleculas/CarroselFotos";
 export default function Imersao() {
   return (
     <div id="imersao">
-      <div className="h-dvh">
+      <div >
         <div className="flex flex-col gap-4 text-[16px] w-9/10 mx-auto">
           <h2 className="font-bold text-[22px] ml-1 mb-0 mt-20 font-[tan]">
             {imersao.titulo}
@@ -17,7 +17,7 @@ export default function Imersao() {
         </div>
         <CarroselFotos images={imersao.imagens} />
       </div>
-      <div className="flex-col w-2/3 mx-auto">
+      <div className="flex-col w-2/3 mx-auto mt-10">
         <h3 className="text-[19px] font-bold mb-8 underline font-[tan]">
           {imersao.cta}
         </h3>

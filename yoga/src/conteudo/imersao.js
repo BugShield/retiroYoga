@@ -1,7 +1,7 @@
 export const imersao = {
   titulo: "Imersão",
   descricao: [
-    " Neste retiro, convidamos você a mergulhar em uma jornada de reconexão profunda consigo mesmo(a) e com as energias sutis que nos cercam."
+    " Neste retiro, convidamos você a mergulhar em uma jornada de reconexão profunda consigo mesmo(a) e com as energias sutis que nos cercam.",
   ],
   atividades: [
     "Limpeza Energética com Ervas",
@@ -18,13 +18,10 @@ export const imersao = {
   ],
   cta: "Atividades de Imersão",
   imagens: [
+    { src: "/assets/imersao/cachoeira2.jpg", alt: "Cachoeira" },
     {
       src: "/assets/imersao/51cachoeira.jpg",
       alt: "Cachoeira",
-    },
-    {
-      src: "/assets/imersao/68.jpg",
-      alt: "Atividade ao ar livre",
     },
     {
       src: "/assets/imersao/defumacao.jpeg",
@@ -33,6 +30,10 @@ export const imersao = {
     {
       src: "/assets/imersao/dinamicaRecorte.jpg",
       alt: "Dinâmica de recorte",
+    },
+    {
+      src: "/assets/imersao/68.jpg",
+      alt: "Atividade ao ar livre",
     },
     {
       src: "/assets/imersao/incensoNatural.jpeg",

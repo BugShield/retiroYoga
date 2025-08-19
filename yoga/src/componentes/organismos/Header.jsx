@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import SideNav from "./SideBar";
-import logo7 from "/assets/logo7.png";
+import logoCinza from "/assets/logoCinza.png";
 
 const pages = [
   { nome: "Sobre", link: "#hero" },
@@ -23,14 +23,14 @@ export default function Header() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-[#f4efef] shadow-sm mb-20">
       <header className="flex justify-between  items-center mx-8 font-bold">
-        <img className="w-15 my-4" src={logo7} alt="Logo 7étimo céu" />
+        <img className="w-18 my-4" src={logoCinza} alt="Logo 7étimo céu" />
         <button
           type="button"
           aria-label="Abrir menu"
           onClick={toggleMenu}
           className="p-2 my-4 rounded hover:bg-amber-50/20 transition"
         >
-          <Menu className="text-[#9d433c] size-8 " />
+          <Menu className="text-[#4d4d4d] size-8 " />
         </button>
       </header>
 
