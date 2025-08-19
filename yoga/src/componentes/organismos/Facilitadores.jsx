@@ -18,8 +18,8 @@ export default function Facilitadores() {
               src={facilitador.foto}
               alt={facilitador.nome}
             />
-            <h4 className="my-4 font-bold text-lg">{facilitador.nome}</h4>
-            <div className="mt-4 flex flex-col gap-4">
+            <h4 className="my-4 font-bold text-lg text-white">{facilitador.nome}</h4>
+            <div className="mt-4 flex flex-col gap-4 text-white">
               {facilitador.paragrafos.map((paragrafo) => (
                 <p className="flex flex-col gap-4 text-[16px] w-8/10 mx-auto xl:w-1/2">
                   {paragrafo}
