@@ -9,7 +9,7 @@ export default function SideNav({ isOpen, onClose, children }) {
       )}
 
       <nav
-        className={`fixed top-0 right-0 h-full w-3/7 bg-[#d5807c] z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-3/7 bg-[#cb4a3e] z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-hidden={!isOpen}

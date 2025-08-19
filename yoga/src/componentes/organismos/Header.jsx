@@ -21,23 +21,23 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-transparent shadow-sm">
-      <header className="flex justify-between  items-center mx-8 mb-4 font-bold">
-        <img className="w-15 mt-5" src={logo7} alt="Logo 7étimo céu" />
+    <div className="fixed top-0 left-0 right-0 z-50 bg-[#f4efef] shadow-sm mb-20">
+      <header className="flex justify-between  items-center mx-8 font-bold">
+        <img className="w-15 my-4" src={logo7} alt="Logo 7étimo céu" />
         <button
           type="button"
           aria-label="Abrir menu"
           onClick={toggleMenu}
-          className="p-2 mt-5 rounded hover:bg-amber-50/20 transition"
+          className="p-2 my-4 rounded hover:bg-amber-50/20 transition"
         >
-          <Menu />
+          <Menu className="text-[#9d433c] size-8 " />
         </button>
       </header>
 
       <SideNav isOpen={isOpen} onClose={closeMenu}>
         {pages.map((page) => (
           <a
-            className="text-white hover:text-amber-200 transition-colors"
+            className="font-semibold text-lg text-gray-700 hover:text-amber-200 transition-colors"
             href={page.link}
           >
             {page.nome}
