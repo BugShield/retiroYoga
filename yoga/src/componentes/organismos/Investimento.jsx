@@ -9,9 +9,9 @@ const textosInvestimento = {
 
 export default function Investimento() {
   return (
-    <div id="investimento" className="h-vh pt-8">
-      <div className="max-w-5xl mx-auto px-4 xl:text-center">
-        <header className="mt-8 mb-8">
+    <div id="investimento" className="pt-8">
+      <div className="h-dvh max-w-5xl mx-auto px-4 md:text-center">
+        <header className="mt-20 mb-8">
           <h1 className="text-2xl font-bold text-white ml-2 xl:text-2xl ">{textosInvestimento.titulo}</h1>
           <p className="mt-1 ml-2 text-white">
             {textosInvestimento.paragrafo}

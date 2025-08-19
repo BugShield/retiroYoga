@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <div className="h-dvh px-4 lg:px-20" id="hero">
       <div className="w-full flex flex-col items-center justify-center mt-10 md:mt-8 xl:mt-10">
-        <div className="mt-15 my-4 xl:mt-35">
+        <div className="mt-30 my-4 xl:mt-35">
           <div className="bg-white w-full mx-auto h-0.5"></div>
           <p className="text-center text-sm text-white sm:text-base lg:text-lg xl:text-2xl">
             7, 8 E 9 DE NOVEMBRO

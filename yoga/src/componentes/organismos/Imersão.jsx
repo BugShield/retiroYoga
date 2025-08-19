@@ -17,7 +17,7 @@ export default function Imersao() {
         </div>
         <CarroselFotos images={imersao.imagens} />
       </div>
-      <div className="flex-col w-2/3 mx-auto mt-10 xl:flex xl:flex-col xl:items-center">
+      <div className="flex-col w-2/3 mx-auto mt-10 md:flex md:flex-col md:items-center">
         <h3 className="text-[19px] font-bold mb-8 underline font-[tan] xl:text-2xl">
           {imersao.cta}
         </h3>
