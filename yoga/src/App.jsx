@@ -44,6 +44,11 @@ function App() {
         style={{ backgroundImage: `url(${bgHeart})` }}
       >
         <Imersao />
+      </div>
+      <div
+        lassName="relative bg-no-repeat bg-center bg-cover "
+        style={{ backgroundImage: `url(${bgHeart})` }}
+      >
         <Investimento />
       </div>
       <ComoChegar />

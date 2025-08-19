@@ -1,15 +1,18 @@
 import logoBranco from "/assets/logoBranco.png";
-import rodrigoPalestra from "/assets/imersao/rodrigoPalestra.JPG";
+import fotoRodrigo from "/assets/facilitadores/fotoRodrigo.png"
+import fotoDani from "/assets/facilitadores/fotoDani.png"
+
+
 
 const facilitadores = [
   {
     nome: "Dani Bertolo",
-    foto: rodrigoPalestra,
+    foto: fotoRodrigo,
     cargo: "Professora de Hatha Yoga",
   },
   {
     nome: "Rodrigo Volponi",
-    foto: rodrigoPalestra,
+    foto: fotoDani,
     cargo: "Terapeuta de Alma",
   },
 ];

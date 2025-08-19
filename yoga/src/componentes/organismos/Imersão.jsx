@@ -3,9 +3,9 @@ import CarroselFotos from "../moleculas/CarroselFotos";
 
 export default function Imersao() {
   return (
-    <div id="imersao">
-      <div >
-        <div className="flex flex-col gap-4 text-[16px] w-9/10 mx-auto">
+    <div id="imersao" className="pb-10">
+      <div className="">
+        <div className="flex flex-col gap-4 text-[16px] w-9/10 mx-auto ">
           <h2 className="font-bold text-[22px] ml-1 mb-0 mt-20 font-[tan]">
             {imersao.titulo}
           </h2>
@@ -23,7 +23,7 @@ export default function Imersao() {
         </h3>
         <ul className="mx-auto font-semibold text-start">
           {imersao.atividades.map((atividade) => (
-            <li className="my-2 list-disc">{atividade}</li>
+            <li className="list-disc">{atividade}</li>
           ))}
         </ul>
       </div>
