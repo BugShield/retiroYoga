@@ -2,17 +2,9 @@ import { Instagram, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f4efef] text-gray-700 py-6 flex flex-col items-center gap-4">
-      <a
-        href="https://7etimoceu.com.br/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/assets/logo7.png" alt="Logo 7etimoceu" className="w-16" />
-      </a>
+    <footer id="contato" className="bg-[#f4efef] text-gray-700 py-6 flex flex-col items-center gap-4">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <p className="mb-4">
-          Contato:{" "}
           <a href="mailto:rodrigo@7etimoceu.com.br" className="underline">
             rodrigo@7etimoceu.com.br
           </a>

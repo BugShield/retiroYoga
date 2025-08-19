@@ -1,15 +1,13 @@
 import CardsPreco from "../moleculas/CardsPreco";
-import {cards} from "../../conteudo/cardsPreco"
+import { cards } from "../../conteudo/cardsPreco";
 
 export default function Investimento() {
   return (
-    <div className="h-dvh">
+    <div className="pt-8">
       <div className="max-w-5xl mx-auto px-4">
-        <header className="mt-20 mb-8">
-          <h1 className="text-2xl font-bold ">
-            Opções de Hospedagem
-          </h1>
-          <p className=" mt-1">
+        <header className="mt-8 mb-8">
+          <h1 className="text-2xl font-bold ml-2 ">Opções de Hospedagem</h1>
+          <p className="mt-1 ml-2">
             Escolha a melhor opção para sua estadia. Valores por pessoa.
           </p>
         </header>
@@ -19,8 +17,6 @@ export default function Investimento() {
             <CardsPreco key={i} {...c} />
           ))}
         </div>
-
-    
       </div>
     </div>
   );

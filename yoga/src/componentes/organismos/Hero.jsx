@@ -1,15 +1,18 @@
-import logo7 from "/assets/logo7.png";
-import rodrigoPalestra from "/assets/imersao/rodrigoPalestra.JPG";
+import logoBranco from "/assets/logoBranco.png";
+import fotoRodrigo from "/assets/facilitadores/fotoRodrigo.png"
+import fotoDani from "/assets/facilitadores/fotoDani.png"
+
+
 
 const facilitadores = [
   {
     nome: "Dani Bertolo",
-    foto: rodrigoPalestra,
+    foto: fotoRodrigo,
     cargo: "Professora de Hatha Yoga",
   },
   {
     nome: "Rodrigo Volponi",
-    foto: rodrigoPalestra,
+    foto: fotoDani,
     cargo: "Terapeuta de Alma",
   },
 ];
@@ -38,7 +41,7 @@ export default function Hero() {
           {facilitadores.map((facilitador) => (
             <div className="flex flex-col items-center justify-center mb-4 sm:mb-0 lg:mx-4">
               <img
-                className="w-20 h-20 sm:w-25 sm:h-25 lg:w-32 lg:h-32 object-cover rounded-full"
+                className="w-25 h-25 sm:w-25 sm:h-25 lg:w-32 lg:h-32 object-cover rounded-full"
                 src={facilitador.foto}
                 alt={facilitador.nome}
               />
@@ -52,10 +55,10 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="mt-10 sm:mt-20 lg:mt-32">
+        <div className="mt-25 sm:mt-20 lg:mt-32">
           <img
-            className="w-20 sm:w-25 lg:w-32 object-cover"
-            src={logo7}
+            className="w-26 sm:w-25 lg:w-32 object-cover"
+            src={logoBranco}
             alt="Logo 7etimoceu"
           />
         </div>

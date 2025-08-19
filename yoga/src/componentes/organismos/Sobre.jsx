@@ -1,4 +1,4 @@
-import logo7 from "/assets/logo7.png"
+import logoBranco from "/assets/logoBranco.png"
 
 const textos = {
   cta: "RECONECTE-SE COM A SUA ESSÊNCIA",
@@ -15,7 +15,7 @@ export default function Sobre() {
           <p>{textos.texto}</p>
         </div>
         <div className="mt-60 mx-auto">
-          <img className="w-25 object-cover" src={logo7} alt="Logo 7etimoceu" />
+          <img className="w-25 object-cover" src={logoBranco} alt="Logo 7etimoceu" />
         </div>
       </div>
     </div>
