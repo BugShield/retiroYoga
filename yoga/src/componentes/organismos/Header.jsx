@@ -34,15 +34,8 @@ export default function Header() {
         </button>
       </header>
 
-      <SideNav isOpen={isOpen} onClose={closeMenu}>
-        {pages.map((page) => (
-          <a
-            className="font-semibold text-lg text-white transition-colors"
-            href={page.link}
-          >
-            {page.nome}
-          </a>
-        ))}
+       <SideNav isOpen={isOpen} onClose={closeMenu}>
+        {pages.map(page => <a className="text-white hover:text-amber-200 transition-colors" href={page.link} onClick={closeMenu}>{page.nome}  </a>)}
       </SideNav>
     </div>
   );
