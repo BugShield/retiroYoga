@@ -24,10 +24,10 @@ export default function ComoChegar() {
             <p className=" mt-2 w-4/5 text-center">{local.end}</p>
           </div>
         </div>
-        <div className="my-10 w-9/10 mx-auto xl:mb-0">
+        <div className="mt-10 w-9/10 mx-auto xl:mb-0">
           <IframeMaps />
         </div>
-        <div className="flex flex-col gap-4 w-8/10 mx-auto mt-8 font-semibold text-white md:hidden lg:mt-0">
+        <div className="flex flex-col gap-4 w-8/10 mx-auto font-semibold text-white md:hidden">
           <div className="flex gap-2 items-center">
             <Tractor />
             <p className="leading-[1]">{avisos[0]}</p>
