@@ -12,7 +12,7 @@ export default function ComoChegar() {
   return (
     <div id="chegar" className="">
       <div
-        className="relative bg-no-repeat bg-center bg-cover pt-4 h-dvh"
+        className="relative bg-no-repeat bg-center bg-cover pt-4 h-dvh xl:h-200"
         style={{ backgroundImage: `url(${bgHeart})` }}
       >
         <h2 className="font-bold text-[22px] mt-30 mb-8 font-[tan] text-center text-white">
@@ -27,7 +27,7 @@ export default function ComoChegar() {
         <div className="my-10 w-9/10 mx-auto xl:mb-0">
           <IframeMaps />
         </div>
-        <div className="flex flex-col gap-4 w-8/10 mx-auto mt-8 font-semibold text-white lg:hidden lg:mt-0">
+        <div className="flex flex-col gap-4 w-8/10 mx-auto mt-8 font-semibold text-white md:hidden lg:mt-0">
           <div className="flex gap-2 items-center">
             <Tractor />
             <p className="leading-[1]">{avisos[0]}</p>

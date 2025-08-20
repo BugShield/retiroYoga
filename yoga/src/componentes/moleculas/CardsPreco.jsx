@@ -26,7 +26,7 @@ export default function CardsPreco({
         className="bg-white rounded-2xl shadow-md overflow-hidden border flex flex-col h-auto cursor-pointer"
         onClick={handleClick}
       >
-        <img src={imgSrc} alt={imgAlt} className="w-full h-45 object-cover" />
+        <img src={imgSrc} alt={imgAlt} className="w-full h-40 object-cover" />
         <div className="p-4 flex-1 flex flex-col">
           <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
             {title}

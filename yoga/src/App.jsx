@@ -46,7 +46,7 @@ function App() {
         <Imersao />
       </div>
       <div
-        lassName="relative bg-no-repeat bg-center bg-cover pt-4 "
+        className="relative bg-no-repeat bg-center bg-cover pt-4 "
         style={{ backgroundImage: `url(${bgHeart})` }}
       >
         <Investimento />
