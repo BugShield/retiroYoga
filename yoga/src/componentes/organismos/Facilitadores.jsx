@@ -22,7 +22,7 @@ export default function Facilitadores() {
               <h4 className="my-4 font-bold text-lg text-white">{facilitador.nome}</h4>
               <div className="mt-4 flex flex-col gap-4 text-white">
                 {facilitador.paragrafos.map((paragrafo) => (
-                  <p className="flex flex-col gap-4 text-[16px] w-9/10 mx-auto xl:w-full">
+                  <p className="flex flex-col gap-4 text-[16px] w-10/11 mx-auto xl:w-full">
                     {paragrafo}
                   </p>
                 ))}
