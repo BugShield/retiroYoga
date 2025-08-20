@@ -9,9 +9,9 @@ const textosInvestimento = {
 
 export default function Investimento() {
   return (
-    <div id="investimento" className="pt-8">
-      <div className="h-dvh max-w-5xl mx-auto px-4 md:text-center">
-        <header className="mt-20 mb-8">
+    <div id="investimento" className="h-auto scroll-mt-24">
+      <div className=" max-w-6xl mx-auto px-4 md:text-center lg:h-auto">
+        <header className="mt-4 mb-8">
           <h1 className="text-2xl font-bold text-white ml-2 xl:text-2xl ">{textosInvestimento.titulo}</h1>
           <p className="mt-1 ml-2 text-white">
             {textosInvestimento.paragrafo}
@@ -19,7 +19,7 @@ export default function Investimento() {
           <p className="mt-1 ml-2 text-white italic font-semibold underline">{textosInvestimento.cta}</p>
         </header>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:pb-20">
+        <div className="grid grid-cols-1 gap-4 pb-10 md:grid-cols-2 xl:pb-20">
           {cards.map((c, i) => (
             <CardsPreco key={i} {...c} />
           ))}

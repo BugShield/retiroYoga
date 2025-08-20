@@ -5,6 +5,7 @@ export default function ModalLead({ onClose }) {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
+  const [pagamento, setPagamento] = useState("");
 
   // Coloque aqui o número destino no formato internacional (sem +, espaços ou traços)
   // Exemplo: Brasil (55) + DDD (11) + número (912345678) => "5511912345678"
@@ -26,6 +27,7 @@ export default function ModalLead({ onClose }) {
       nome: nome.trim(),
       email: email.trim(),
       telefone: telefone.trim(),
+      pagamento,
       origem: "Site - Retiro 7º Céu",
       data: new Date().toISOString(),
     };
@@ -39,8 +41,8 @@ export default function ModalLead({ onClose }) {
       `• Nome: ${lead.nome}`,
       `• E-mail: ${lead.email}`,
       `• Telefone: ${lead.telefone}`,
+      `• Forma de Pagamento: ${formataPagamento(pagamento)}`,
       `• Origem: ${lead.origem}`,
-
     ].join("\n");
 
     // Monta a URL do WhatsApp
@@ -48,6 +50,19 @@ export default function ModalLead({ onClose }) {
 
     // Abre em nova aba
     window.open(url, "_blank");
+  }
+
+  function formataPagamento(p) {
+    switch (p) {
+      case "pixVista":
+        return "PIX à vista";
+      case "pixParcelado":
+        return "PIX parcelado";
+      case "cartaoCredito":
+        return "Cartão de crédito";
+      default:
+        return "Erro"
+    }
   }
 
   return (
@@ -60,7 +75,7 @@ export default function ModalLead({ onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between">
-          <h2 className="text-xl font-bold mb-4 text-center">Pagamento</h2>
+          <h2 className="text-xl font-bold mb-4 text-center underline">Pagamento</h2>
           <X onClick={onClose} className="text-red-600" />
         </div>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -104,6 +119,25 @@ export default function ModalLead({ onClose }) {
               className="border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
               placeholder="1199999999"
             />
+          </div>
+
+          <div className="flex flex-col">
+            <label htmlFor="pagamento" className="mb-2 text-sm font-medium">
+              Forma de Pagamento
+            </label>
+            <select
+              name="select"
+              id="pagamento"
+              value={pagamento}
+              onChange={(e) => setPagamento(e.target.value)}
+              className="-ml-1"
+            >
+              <option value="pixVista" selected>
+                PIX à vista
+              </option>
+              <option value="pixParcelado">PIX parcelado</option>
+              <option value="cartaoCredito">Cartão de crédito</option>
+            </select>
           </div>
 
           <button
