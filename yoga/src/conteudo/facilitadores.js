@@ -14,7 +14,7 @@ export const facilitadores = [
     nome: "Dani Bertolo",
     foto: fotoDani,
     paragrafos: [
-      "Terapeuta de Àyurveda e Professora de Yoga, a Dani Bertolo também é uma das anfitriãs e co-fundadora da Prema - Casa da Montanha. Foi pelo seu interesse no Ayurveda e na forma que essa rnedicina olha o mundo que fez uma grande transição de carreira, passou meses na índia e se formou também em Yoga. Nesse grande caminho que a Prema se estruturou e hoje vive mais alinhada com a natureza e o sentir do seu corpo e ciclos dentro e fora. Facilita retiros e cursos de Yoga e Ayurveda, oferece massagens abhyanga e cuida para que a experiência na Prema, seja alinhada com os convites da natureza.",
+      "Terapeuta de Àyurveda e Professora de Yoga, a Dani Bertolo também é uma das anfitriãs e co-fundadora da Prema - Casa da Montanha. Foi pelo seu interesse no Ayurveda e na forma que essa medicina olha o mundo que fez uma grande transição de carreira, passou meses na índia e se formou também em Yoga. Nesse grande caminho que a Prema se estruturou e hoje vive mais alinhada com a natureza e o sentir do seu corpo e ciclos dentro e fora. Facilita retiros e cursos de Yoga e Ayurveda, oferece massagens abhyanga e cuida para que a experiência na Prema, seja alinhada com os convites da natureza.",
     ],
   },
 ];
