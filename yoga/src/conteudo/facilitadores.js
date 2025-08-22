@@ -6,7 +6,7 @@ export const facilitadores = [
     nome: "Rodrigo Volponi",
     foto: fotoRodrigo,
     paragrafos: [
-      "Rodrigo é o fundador e Terapeuta de Alma do 7étimo Céu. Desenvolveu uma metodologia de terapias integrativas focadas no auxilio a casos de depressão, ansiedade e desequilíbrio ehergético- Seu propósito é guiar buscadores no caminho da reconexão espiritual, utilizando conhecimento adquiri9 em sua jornada em angeologia, numerologia, benzimentos e na manipulação das energias de ervas, cristais e velas",
+      "Rodrigo é o fundador e Terapeuta de Alma do 7étimo Céu. Desenvolveu uma metodologia de terapias integrativas focadas no auxilio a casos de depressão, ansiedade e desequilíbrio energético. Seu propósito é guiar buscadores no caminho da reconexão espiritual, utilizando conhecimento adquirido em sua jornada em angeologia, numerologia, benzimentos e na manipulação das energias de ervas, cristais e velas",
       "Com mais de 17 anos de experiência como médium, Rodrigo coordenou o Curso de Desenvolvimento Mediúnico no Templo de Umbanda Ogum Beira Mar e formou-se em rituais e benzimentos com diversos mestres e escolas. É Reikiano Nível 3 pelo sistema Usui Tibetano, iniciado na Magia Divina e professor de Yoga, unindo saberes espirituais e terapêuticos em sua jornada.",
     ],
   },
