@@ -5,11 +5,11 @@ export default function Imersao() {
   return (
     <div id="imersao" className="scroll-mt-24">
       <div className="">
-        <div className="flex flex-col gap-4 text-[16px] w-9/10 mx-auto text-white xl:mx-auto  xl:text-center">
+        <div className="flex flex-col gap-4 text-[16px] w-9/10 mx-auto text-white xl:w-full xl:text-center">
           <h2 className="font-bold text-[22px] ml-1 mb-0 mt-4 font-[tan]  xl:text-2xl">
             {imersao.titulo}
           </h2>
-          <div className="flex flex-col gap-4 xl:text-[20px] ">
+          <div className="flex flex-col gap-4 xl:text-[16px] ">
             {imersao.descricao.map((paragrafo) => (
               <p>{paragrafo}</p>
             ))}
