@@ -15,7 +15,7 @@ export default function ComoChegar() {
         className="relative bg-no-repeat bg-center bg-cover pt-4 h-dvh xl:h-200"
         style={{ backgroundImage: `url(${bgHeart})` }}
       >
-        <h2 className="font-bold text-[22px] mt-30 mb-8 font-[tan] text-center text-white">
+        <h2 className="font-bold text-[22px] mt-30 mb-8 font-[tan] text-center text-white xl:mt-10">
           Como Chegar?
         </h2>
         <div className="flex flex-col gap-6">
