@@ -135,7 +135,7 @@ export default function ModalLead({ onClose }) {
       onClick={onClose}
     >
       <div
-        className="bg-white text-black p-6 rounded-lg shadow-lg w-11/12 sm:w-2/3 md:w-1/2 lg:w-2/5"
+        className="bg-white text-black p-6 rounded-lg shadow-lg w-11/12 sm:w-2/3 md:w-1/2 lg:w-1/4"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between">
