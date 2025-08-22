@@ -15,14 +15,14 @@ export default function Facilitadores() {
           {facilitadores.map((facilitador) => (
             <div className="mt-4 flex flex-col items-center xl:w-[45%] xl:h-auto">
               <img
-                className="w-[150px] h-[150px] rounded-full object-cover xl:w-[170px] xl:h-[170px] 2xl:w-[250px] 2xl:h-[250px]"
+                className="w-[150px] h-[150px] rounded-full object-cover xl:w-[160px] xl:h-[160px] 2xl:w-[250px] 2xl:h-[250px]"
                 src={facilitador.foto}
                 alt={facilitador.nome}
               />
-              <h4 className="my-4 font-bold text-lg text-white xl:my-0">{facilitador.nome}</h4>
-              <div className="mt-4 flex flex-col gap-4 text-white">
+              <h4 className="my-4 font-bold text-lg text-white xl:my-0 xl:hidden 2xl:block">{facilitador.nome}</h4>
+              <div className="mt-4 flex flex-col gap-4 text-white xl:gap-2">
                 {facilitador.paragrafos.map((paragrafo) => (
-                  <p className="flex flex-col gap-4 text-[16px] w-10/11 mx-auto xl:w-full">
+                  <p className="flex flex-col gap-4 text-[16px] w-10/11 mx-auto xl:w-full xl:text-[15px]">
                     {paragrafo}
                   </p>
                 ))}
