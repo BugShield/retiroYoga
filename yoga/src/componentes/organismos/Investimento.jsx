@@ -4,7 +4,6 @@ import { cards } from "../../conteudo/cardsPreco";
 const textosInvestimento = {
   titulo: 'Opções de Hospedagem',
   paragrafo: 'Escolha a melhor opção para sua estadia. Valores por pessoa.',
-  cta: 'Desconto de 8% para pagamento à vista via PIX.'
 }
 
 export default function Investimento() {
@@ -16,7 +15,6 @@ export default function Investimento() {
           <p className="mt-1 ml-2 text-white">
             {textosInvestimento.paragrafo}
           </p>
-          <p className="mt-1 ml-2 text-white italic font-semibold underline">{textosInvestimento.cta}</p>
         </header>
 
         <div className="grid grid-cols-1 gap-4 pb-10 md:grid-cols-2 xl:pb-20">
