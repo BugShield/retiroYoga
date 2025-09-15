@@ -57,7 +57,7 @@ export default function ModalLead({ onClose }) {
   }
 
   // Número destino no formato internacional (sem +, espaços ou traços)
-  const phone = "5511912879966";
+  const phone = "5511993928432";
 
   function handleSubmit(e) {
     e.preventDefault();
