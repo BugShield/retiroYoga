@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ModalLead from "./ModalLead";
+import ModalTextoLegal from "./ModalTextoLegal";
 
 export default function CardsPreco({
   title,
@@ -9,16 +10,20 @@ export default function CardsPreco({
   imgSrc,
   imgAlt,
 }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [lead, setLead] = useState(null);
+  const [isLegalOpen, setIsLegalOpen] = useState(false);
+  const [isLeadOpen, setIsLeadOpen] = useState(false);
 
   const handleClick = () => {
-    setLead({ cardTitle: title });
-    setIsModalOpen(true);
-    console.log(lead);
+    setIsLegalOpen(true); // Abre primeiro o texto legal
   };
 
-  const closeModal = () => setIsModalOpen(false);
+  const handleLegalConfirm = () => {
+    setIsLegalOpen(false);
+    setIsLeadOpen(true); // Só abre o Lead se concordar
+  };
+
+  const closeLegal = () => setIsLegalOpen(false);
+  const closeLead = () => setIsLeadOpen(false);
 
   return (
     <div className="">
@@ -39,7 +44,10 @@ export default function CardsPreco({
         </div>
       </div>
 
-      {isModalOpen && <ModalLead onClose={closeModal} />}
+      {isLegalOpen && (
+        <ModalTextoLegal onClose={closeLegal} onConfirm={handleLegalConfirm} />
+      )}
+      {isLeadOpen && <ModalLead onClose={closeLead} />}
     </div>
   );
 }

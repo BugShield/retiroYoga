@@ -20,7 +20,10 @@ export default function ModalLead({ onClose }) {
     if (numeros.length <= 2) return `(${numeros}`;
     if (numeros.length <= 7)
       return `(${numeros.slice(0, 2)}) ${numeros.slice(2)}`;
-    return `(${numeros.slice(0, 2)}) ${numeros.slice(2, 7)}-${numeros.slice(7, 11)}`;
+    return `(${numeros.slice(0, 2)}) ${numeros.slice(2, 7)}-${numeros.slice(
+      7,
+      11
+    )}`;
   }
 
   // Validação de e-mail (regra simples solicitada)
@@ -40,7 +43,8 @@ export default function ModalLead({ onClose }) {
 
   function handleBlurEmail() {
     if (!email.trim()) setFieldError("email", "Informe seu e-mail.");
-    else if (!validarEmail(email)) setFieldError("email", "E-mail inválido (precisa ter @ e .com).");
+    else if (!validarEmail(email))
+      setFieldError("email", "E-mail inválido (precisa ter @ e .com).");
     else setFieldError("email", "");
   }
 
@@ -72,9 +76,7 @@ export default function ModalLead({ onClose }) {
         ? "E-mail inválido."
         : "",
       telefone:
-        telefone.replace(/\D/g, "").length < 10
-          ? "Telefone incompleto."
-          : "",
+        telefone.replace(/\D/g, "").length < 10 ? "Telefone incompleto." : "",
     };
     const finalErrors = {
       nome: checksNow.nome || errors.nome,
@@ -139,7 +141,9 @@ export default function ModalLead({ onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between">
-          <h2 className="text-xl font-bold mb-4 text-center underline">Pagamento</h2>
+          <h2 className="text-xl font-bold mb-4 text-center underline">
+            Pagamento
+          </h2>
           <X onClick={onClose} className="text-red-600 cursor-pointer" />
         </div>
 
