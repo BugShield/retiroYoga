@@ -116,8 +116,6 @@ export default function ModalLead({ onClose }) {
     switch (p) {
       case "pixVista":
         return "PIX à vista";
-      case "pixParcelado":
-        return "PIX parcelado";
       case "cartaoCredito":
         return "Cartão de crédito";
       default:
@@ -142,7 +140,7 @@ export default function ModalLead({ onClose }) {
       >
         <div className="flex justify-between">
           <h2 className="text-xl font-bold mb-4 text-center underline">
-            Pagamento
+            Fale Conosco
           </h2>
           <X onClick={onClose} className="text-red-600 cursor-pointer" />
         </div>
@@ -224,7 +222,6 @@ export default function ModalLead({ onClose }) {
               className="border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
             >
               <option value="pixVista">PIX à vista</option>
-              <option value="pixParcelado">PIX parcelado</option>
               <option value="cartaoCredito">Cartão de crédito</option>
             </select>
           </div>
@@ -234,7 +231,7 @@ export default function ModalLead({ onClose }) {
             className="border bg-green-600 rounded-xl text-white px-4 py-2 mt-2 hover:bg-green-700 transition disabled:opacity-60"
             disabled={isDisabled}
           >
-            Enviar pelo WhatsApp
+            Saiba Mais
           </button>
         </form>
       </div>
